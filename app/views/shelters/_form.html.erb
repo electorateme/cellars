@@ -1,0 +1,20 @@
+<%= semantic_form_for @shelter do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :address_1 %>
+    <%= f.input :address_2 %>
+    <%= f.input :address_3 %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :zipcode %>
+    <%= f.input :zip_plus %>
+    <%= f.input :telephone %>
+    <%= f.input :family_size %>
+    <%= f.input :shelter_location %>
+  <% end %>
+
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>

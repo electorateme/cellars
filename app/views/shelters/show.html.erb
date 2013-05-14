@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @shelter.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @shelter.last_name %>
+</p>
+
+<p>
+  <b>Address 1:</b>
+  <%= @shelter.address_1 %>
+</p>
+
+<p>
+  <b>Address 2:</b>
+  <%= @shelter.address_2 %>
+</p>
+
+<p>
+  <b>Address 3:</b>
+  <%= @shelter.address_3 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @shelter.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @shelter.state %>
+</p>
+
+<p>
+  <b>Zipcode:</b>
+  <%= @shelter.zipcode %>
+</p>
+
+<p>
+  <b>Zip plus:</b>
+  <%= @shelter.zip_plus %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @shelter.telephone %>
+</p>
+
+<p>
+  <b>Family size:</b>
+  <%= @shelter.family_size %>
+</p>
+
+<p>
+  <b>Shelter location:</b>
+  <%= @shelter.shelter_location %>
+</p>
+
+
+<%= link_to 'Edit', edit_shelter_path(@shelter) %> |
+<%= link_to 'Back', shelters_path %>

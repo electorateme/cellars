@@ -1,0 +1,45 @@
+<h1>Listing shelters</h1>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Address 1</th>
+    <th>Address 2</th>
+    <th>Address 3</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+    <th>Zip plus</th>
+    <th>Telephone</th>
+    <th>Family size</th>
+    <th>Shelter location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shelters.each do |shelter| %>
+  <tr>
+    <td><%= shelter.first_name %></td>
+    <td><%= shelter.last_name %></td>
+    <td><%= shelter.address_1 %></td>
+    <td><%= shelter.address_2 %></td>
+    <td><%= shelter.address_3 %></td>
+    <td><%= shelter.city %></td>
+    <td><%= shelter.state %></td>
+    <td><%= shelter.zipcode %></td>
+    <td><%= shelter.zip_plus %></td>
+    <td><%= shelter.telephone %></td>
+    <td><%= shelter.family_size %></td>
+    <td><%= shelter.shelter_location %></td>
+    <td><%= link_to 'Show', shelter %></td>
+    <td><%= link_to 'Edit', edit_shelter_path(shelter) %></td>
+    <td><%= link_to 'Destroy', shelter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shelter', new_shelter_path %>
